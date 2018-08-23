@@ -1,7 +1,7 @@
 import numpy as np
 
 class ActivationFunction:
-    """step sigmoid """
+    """step sigmoid relu"""
     def step_function(x):
         y = x > 0
         return y.astype(np.int)
@@ -11,3 +11,6 @@ class ActivationFunction:
     
     def relu(x):
         return np.maximum(0,x)
+    
+    def identity_function(x):
+        return x
